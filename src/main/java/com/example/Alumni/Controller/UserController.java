@@ -44,6 +44,12 @@ public class UserController {
 		userservice.registerUser(u);
 	}
 	
+	@GetMapping("/")
+	public void home() {
+		System.out.println("in home route");
+		
+	}
+	
 	
 	
 }
