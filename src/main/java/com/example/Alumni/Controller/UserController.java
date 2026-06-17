@@ -49,11 +49,11 @@ public class UserController {
 		System.out.println("in home route");
 		
 	}
-	@GetMapping("/home")
-	public void homepage() {
-		System.out.println("in home route 2");
-		
-	}
+//	@GetMapping("/home")
+//	public void homepage() {
+//		System.out.println("in home route 2");
+//		
+//	}
 	
 	
 	
