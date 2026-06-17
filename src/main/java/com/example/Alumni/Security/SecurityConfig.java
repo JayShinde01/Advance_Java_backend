@@ -29,6 +29,7 @@ public class SecurityConfig {
         http.csrf().disable()
             .authorizeHttpRequests()
             .requestMatchers("/login", "/registeruser").permitAll() 
+            .requestMatchers("/swagger-ui.html").permitAll()
             .requestMatchers("api/alumni/**").authenticated()
             .anyRequest().permitAll(); // allow login & register
            // all other APIs need authentication
